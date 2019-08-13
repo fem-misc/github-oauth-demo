@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github login demo</title>
+  </head>
+  <body>
+    <button onclick="login()">Login with GitHub</button>
+
+    <script>
+      const client_id = 'c77bc8557ef9d64fc4b7'
+      const authorize_uri = 'https://github.com/login/oauth/authorize'
+
+      function login() {
+        location.href = `${authorize_uri}?client_id=${client_id}`
+      }
+    </script>
+  </body>
+</html>
